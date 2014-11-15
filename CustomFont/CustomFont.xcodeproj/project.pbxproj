@@ -13,6 +13,9 @@
 		7CBAEAD01A16E2F300A88622 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAEACF1A16E2F300A88622 /* Images.xcassets */; };
 		7CBAEAD31A16E2F300A88622 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAEAD11A16E2F300A88622 /* LaunchScreen.xib */; };
 		7CBAEADF1A16E2F300A88622 /* CustomFontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAEADE1A16E2F300A88622 /* CustomFontTests.swift */; };
+		7CBAEAEF1A172C2800A88622 /* DFPShaoNvW5-GB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAEAEC1A172C2800A88622 /* DFPShaoNvW5-GB.ttf */; };
+		7CBAEAF01A172C2800A88622 /* fixedsys-FSEX300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAEAED1A172C2800A88622 /* fixedsys-FSEX300.ttf */; };
+		7CBAEAF11A172C2800A88622 /* SimSun.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAEAEE1A172C2800A88622 /* SimSun.ttc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		7CBAEAD81A16E2F300A88622 /* CustomFontTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomFontTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CBAEADD1A16E2F300A88622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CBAEADE1A16E2F300A88622 /* CustomFontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontTests.swift; sourceTree = "<group>"; };
+		7CBAEAEC1A172C2800A88622 /* DFPShaoNvW5-GB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DFPShaoNvW5-GB.ttf"; sourceTree = "<group>"; };
+		7CBAEAED1A172C2800A88622 /* fixedsys-FSEX300.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fixedsys-FSEX300.ttf"; sourceTree = "<group>"; };
+		7CBAEAEE1A172C2800A88622 /* SimSun.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimSun.ttc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 		7CBAEAC51A16E2F300A88622 /* CustomFont */ = {
 			isa = PBXGroup;
 			children = (
+				7CBAEAEC1A172C2800A88622 /* DFPShaoNvW5-GB.ttf */,
+				7CBAEAED1A172C2800A88622 /* fixedsys-FSEX300.ttf */,
+				7CBAEAEE1A172C2800A88622 /* SimSun.ttc */,
 				7CBAEAC81A16E2F300A88622 /* AppDelegate.swift */,
 				7CBAEACA1A16E2F300A88622 /* ViewController.swift */,
 				7CBAEACC1A16E2F300A88622 /* Main.storyboard */,
@@ -193,7 +202,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CBAEACE1A16E2F300A88622 /* Main.storyboard in Resources */,
+				7CBAEAF01A172C2800A88622 /* fixedsys-FSEX300.ttf in Resources */,
+				7CBAEAEF1A172C2800A88622 /* DFPShaoNvW5-GB.ttf in Resources */,
 				7CBAEAD31A16E2F300A88622 /* LaunchScreen.xib in Resources */,
+				7CBAEAF11A172C2800A88622 /* SimSun.ttc in Resources */,
 				7CBAEAD01A16E2F300A88622 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CustomFont/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CustomFont/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -407,6 +421,7 @@
 				7CBAEAE41A16E2F300A88622 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CBAEAE51A16E2F300A88622 /* Build configuration list for PBXNativeTarget "CustomFontTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +430,7 @@
 				7CBAEAE71A16E2F300A88622 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

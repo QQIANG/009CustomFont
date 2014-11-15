@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="fixedsys-FSEX300.ttf">
+            <string>FixedsysExcelsiorIIIb</string>
+            <string>FixedsysExcelsiorIIIb</string>
+            <string>FixedsysExcelsiorIIIb</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomFont" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +22,57 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTb-Ma-So6">
+                                <rect key="frame" x="185" y="28" width="230" height="28"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="7Dl-bv-lez"/>
+                                    <constraint firstAttribute="height" constant="28" id="BBe-3m-xyc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FixedsysExcelsiorIIIb" family="Fixedsys Excelsior 3.01" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kp-Yp-Y8a">
+                                <rect key="frame" x="185" y="64" width="230" height="28"/>
+                                <color key="backgroundColor" red="0.25490196079999999" green="0.79215686269999996" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="FixedsysExcelsiorIIIb" family="Fixedsys Excelsior 3.01" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65E-aa-jSX">
+                                <rect key="frame" x="185" y="100" width="230" height="28"/>
+                                <color key="backgroundColor" red="0.97867095469999998" green="0.047133609120000003" blue="0.15622055879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="FixedsysExcelsiorIIIb" family="Fixedsys Excelsior 3.01" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4kp-Yp-Y8a" firstAttribute="top" secondItem="hTb-Ma-So6" secondAttribute="bottom" constant="8" id="6Pu-jH-ns9"/>
+                            <constraint firstAttribute="centerX" secondItem="hTb-Ma-So6" secondAttribute="centerX" id="CPm-et-FdC"/>
+                            <constraint firstItem="4kp-Yp-Y8a" firstAttribute="height" secondItem="hTb-Ma-So6" secondAttribute="height" id="HNW-8e-Q0u"/>
+                            <constraint firstItem="65E-aa-jSX" firstAttribute="leading" secondItem="4kp-Yp-Y8a" secondAttribute="leading" id="HRK-Ld-65y"/>
+                            <constraint firstItem="4kp-Yp-Y8a" firstAttribute="width" secondItem="hTb-Ma-So6" secondAttribute="width" id="HRS-yl-X3J"/>
+                            <constraint firstItem="65E-aa-jSX" firstAttribute="top" secondItem="4kp-Yp-Y8a" secondAttribute="bottom" constant="8" id="eWq-Mf-io1"/>
+                            <constraint firstItem="65E-aa-jSX" firstAttribute="width" secondItem="4kp-Yp-Y8a" secondAttribute="width" id="ktx-ej-kmb"/>
+                            <constraint firstItem="hTb-Ma-So6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="p36-ME-96t"/>
+                            <constraint firstItem="4kp-Yp-Y8a" firstAttribute="leading" secondItem="hTb-Ma-So6" secondAttribute="leading" id="qsq-xz-CKn"/>
+                            <constraint firstItem="65E-aa-jSX" firstAttribute="height" secondItem="4kp-Yp-Y8a" secondAttribute="height" id="waI-9I-ODU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label_bottom" destination="65E-aa-jSX" id="hm7-Oj-rKP"/>
+                        <outlet property="label_middle" destination="4kp-Yp-Y8a" id="QnU-2l-rPi"/>
+                        <outlet property="label_top" destination="hTb-Ma-So6" id="ZDZ-av-42m"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="g0O-GR-8t8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-49" y="136"/>
         </scene>
     </scenes>
 </document>
